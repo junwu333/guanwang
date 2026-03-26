@@ -25,6 +25,36 @@ function handleNavbarScroll() {
     }
 }
 
+// 汉堡菜单功能
+function handleHamburgerMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // 点击菜单项后关闭菜单
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // 点击页面其他地方关闭菜单
+        document.addEventListener('click', function(e) {
+            if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+    }
+}
+
 // 平滑滚动
 function smoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
@@ -51,6 +81,7 @@ function init() {
     window.addEventListener('scroll', handleScrollAnimation);
     window.addEventListener('scroll', handleNavbarScroll);
     smoothScroll();
+    handleHamburgerMenu();
     handleScrollAnimation(); // 初始检查
 }
 

@@ -10,9 +10,9 @@
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-left">
-                <h1>你的名字</h1>
-                <p>AI 产品经理</p>
+            <div class="nav-left" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="cursor: pointer;">
+                <h1>刘玉琴</h1>
+                <p>产品经理</p>
             </div>
             <div class="nav-right">
                 <ul class="nav-menu">
@@ -23,15 +23,32 @@
                     <li><a href="#portfolio">作品</a></li>
                     <li><a href="#contact">联系我</a></li>
                 </ul>
+                <!-- 汉堡菜单 -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
     </nav>
+    <!-- 移动菜单 -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#skills">技能</a></li>
+            <li><a href="#projects">工作 / 项目</a></li>
+            <li><a href="#experience">经历</a></li>
+            <li><a href="#portfolio">作品</a></li>
+            <li><a href="#contact">联系我</a></li>
+        </ul>
+    </div>
 
     <!-- Banner 首屏 -->
     <section class="banner">
         <div class="container">
-            <h1>你的名字</h1>
-            <p class="position">AI 产品经理｜专注 AI 工具、AI 生成产品</p>
+            <h1>刘玉琴</h1>
+            <p class="position">产品经理｜全栈能力：需求定义 + 视觉设计，一站式解决问题</p>
             <p class="slogan">用科技赋能产品，以创新驱动未来</p>
             <div class="banner-buttons">
                 <a href="#projects" class="btn">查看项目</a>
@@ -48,16 +65,16 @@
                 <div class="about-info">
                     <h3>基本信息</h3>
                     <ul>
-                        <li>城市：北京</li>
-                        <li>岗位：AI 产品经理</li>
-                        <li>年限：5年</li>
-                        <li>方向：AI 工具、AI 生成产品</li>
+                        <li>城市：深圳</li>
+                        <li>岗位：产品经理</li>
+                        <li>年限：3年</li>
+                        <li>方向：软件产品经理、AI 产品经理</li>
                     </ul>
                 </div>
                 <div class="about-advantages">
                     <h3>个人优势</h3>
                     <ul>
-                        <li>1. 丰富的 AI 产品设计经验，熟悉大模型应用场景</li>
+                        <li>1. 丰富的软件产品经理、AI 产品经理经验，熟悉大模型应用场景</li>
                         <li>2. 优秀的产品思维，能够快速理解用户需求</li>
                         <li>3. 良好的跨部门协作能力，推动项目落地</li>
                     </ul>
@@ -89,8 +106,10 @@
                     <h3>工具</h3>
                     <ul>
                         <li>Axure</li>
+                        <li>Figma</li>
+                        <li>Mastergo</li>
                         <li>墨刀</li>
-                        <li>Notion</li>
+                        <li>trae</li>
                         <li>AI 工具</li>
                     </ul>
                 </div>
@@ -99,6 +118,7 @@
                     <ul>
                         <li>沟通能力</li>
                         <li>逻辑思维</li>
+                        <li>数据分析</li>
                         <li>复盘能力</li>
                         <li>跨部门协作</li>
                     </ul>
@@ -148,7 +168,7 @@
             <h2 class="section-title">作品集</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-card">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=AI%20product%20design%20dashboard&image_size=square_hd" alt="AI 产品设计">
+                    <img src="images/ai_design.png" alt="AI 产品设计">
                     <div class="portfolio-content">
                         <h3>AI 产品设计</h3>
                         <p>智能助手产品的完整设计方案</p>
@@ -156,15 +176,15 @@
                     </div>
                 </div>
                 <div class="portfolio-card">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20prototype%20design&image_size=square_hd" alt="移动APP原型">
+                    <img src="images/yuanxing.png" alt="移动APP原型、ui">
                     <div class="portfolio-content">
-                        <h3>移动APP原型</h3>
-                        <p>用户体验优化后的APP原型设计</p>
+                        <h3>移动APP原型、ui</h3>
+                        <p>用户体验优化后的APP原型、UI设计</p>
                         <a href="#" class="btn-sm">查看详情</a>
                     </div>
                 </div>
                 <div class="portfolio-card">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=AI%20product%20requirements%20document&image_size=square_hd" alt="AI 产品需求文档">
+                    <img src="images/xuqiu.png" alt="AI 产品需求文档">
                     <div class="portfolio-content">
                         <h3>AI 产品需求文档</h3>
                         <p>详细的产品功能和技术实现方案</p>
@@ -181,11 +201,9 @@
             <h2 class="section-title">联系方式</h2>
             <div class="contact-info">
                 <ul>
-                    <li>微信：your_wechat</li>
-                    <li>邮箱：your_email@example.com</li>
-                    <li>LinkedIn：your_linkedin</li>
-                    <li>小红书：your_xiaohongshu</li>
-                    <li>知乎：your_zhihu</li>
+                    <li>微信：WindMirror118</li>
+                    <li>邮箱：wind4162001@163.com</li>
+                    <li>手机号：15871321407</li>
                 </ul>
                 <p class="contact-message">欢迎交流、合作、内推、求职</p>
             </div>
@@ -195,7 +213,7 @@
     <!-- 底部 -->
     <footer class="footer">
         <div class="container">
-            <p>© 2026 你的名字</p>
+            <p>© 2026 刘玉琴</p>
         </div>
     </footer>
 
